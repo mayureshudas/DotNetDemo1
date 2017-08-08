@@ -33,7 +33,7 @@ public class Test1 {
 	@Test
 	public static void getHeader(){
 		String title=driver.getTitle();
-		Assert.assertEquals("An ASP .net website", title);
+		Assert.assertEquals("Magazine Admin Panel :: Dashboard", title);
 		
 	}
 	
