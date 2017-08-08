@@ -1,5 +1,7 @@
 package test;
 
+import junit.framework.Assert;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
@@ -14,5 +16,13 @@ public class Test1 {
 		driver.findElement(By.xpath("//form//input[@id='Password']")).sendKeys("admin123");
 		driver.findElement(By.xpath("//form//input[@class='btn btn-default']")).click();
 	}
+	
+	@Test
+	public static void getHeader(){
+		String title=driver.getTitle();
+		Assert.assertEquals("", title);
+		
+	}
+	
 
 }

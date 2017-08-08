@@ -34,7 +34,7 @@ public static void launchBrowser(@Optional("chrome")String browser, String url){
 		//WebDriver driver = new FirefoxDriver(capabilities);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.get("url");
+		driver.get("http://google.com");
 		
 		
 	
