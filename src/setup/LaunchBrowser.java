@@ -26,7 +26,7 @@ public static void launchBrowser(@Optional("chrome")String browser, String url){
 	
 	
 		System.out.println("Inside chrome box");
-		System.setProperty("webdriver.chrome.driver", "D:\\Users\\maudas\\Downloads\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Administrator\\Downloads\\chromedriver_win32\\chromedriver.exe");
 		driver=new ChromeDriver();
 		//System.setProperty("webdriver.gecko.driver", "D:\\Users\\maudas\\Downloads\\geckodriver-v0.18.0-win64\\geckodriver.exe");
 		//DesiredCapabilities capabilities=DesiredCapabilities.firefox();
@@ -34,7 +34,7 @@ public static void launchBrowser(@Optional("chrome")String browser, String url){
 		//WebDriver driver = new FirefoxDriver(capabilities);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.get("http://google.com");
+		driver.get("http://localhost/demotesting/account/login");
 		
 		
 	
