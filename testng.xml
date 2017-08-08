@@ -8,7 +8,7 @@
 
   <classes>
   
-  <class name="setup.LaunchBrowser"></class>
+ 
   <class name="test.Test1"></class>
   </classes>
   </test> <!-- Test -->
